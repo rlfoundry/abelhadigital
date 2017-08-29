@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>abelhadigital.com</title>
     <link>https://rlfoundry.github.io/abelhadigital/feed.rss</link>
     <description>abelhadigital.com develops software for Windows.</description>
     <language>en</language>
+	<ttl>120</ttl>
+	<atom:link href="https://rlfoundry.github.io/abelhadigital/feed.rss" rel="self" type="application/rss+xml" />
     <item>
       <title>HostsMan v4.7.105</title>
       <pubDate>Mon, 2 Jan 2017 12:00:00 +0100</pubDate>

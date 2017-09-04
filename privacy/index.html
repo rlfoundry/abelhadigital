@@ -27,24 +27,27 @@
   <!-- Custom styles for this template -->
   <link href="../css/normal.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.4/cookieconsent.min.css" integrity="sha256-RWqxpxUH7ZGrrhTJ0I+v+zc6e8cRpm5ENBt7i3u3KrQ="
-    crossorigin="anonymous" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.4/cookieconsent.min.js" integrity="sha256-r0xmg4FKpSfK9TvePQIeaq/gCDO0Xy3q0EPIfteGRnQ="
-    crossorigin="anonymous"></script>
-    <script>
-      window.addEventListener("load", function(){
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#252e39"
-          },
-          "button": {
-            "background": "#14a7d0"
-          }
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#343c66",
+          "text": "#cfcfe8"
         },
-        "theme": "classic",
-        "position": "bottom-right"
-      })});
+        "button": {
+          "background": "#f71559"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "content": {
+        "dismiss": "I understand",
+        "href": "./cookies"
+      }
+    })});
   </script>
 </head>
 
@@ -63,21 +66,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">abelhadigital.com</a>
+        <a class="navbar-brand" href="..">abelhadigital.com</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/hostsman">HostsMan</a></li>
-          <li><a href="/multihasher">MultiHasher</a></li>
+          <li><a href="../hostsman">HostsMan</a></li>
+          <li><a href="../multihasher">MultiHasher</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Software <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="/hostsserver">HostsServer</a></li>
+              <li><a href="../hostsserver">HostsServer</a></li>
             </ul>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/about">Contacts</a></li>
+          <li><a href="../about">Contacts</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -160,17 +163,17 @@
           <div class="col-xs-4">
             <div class="footer-heading">Software</div>
             <ul class="list-unstyled footer-links">
-              <li class=""><a href="/hostsman">HostsMan</a></li>
-              <li><a href="/hostsserver">HostsServer</a></li>
-              <li><a href="/multihasher">MultiHasher</a></li>
+              <li class=""><a href="../hostsman">HostsMan</a></li>
+              <li><a href="../hostsserver">HostsServer</a></li>
+              <li><a href="../multihasher">MultiHasher</a></li>
             </ul>
           </div>
 
           <div class="col-xs-4">
             <div class="footer-heading">Links</div>
             <ul class="list-unstyled footer-links">
-              <li><a href="/about">About</a></li>
-              <li><a href="/donate">Donate</a></li>
+              <li><a href="../about">About</a></li>
+              <li><a href="../donate">Donate</a></li>
             </ul>
           </div>
 
@@ -190,8 +193,7 @@
       <div class="container">
         <ul class="list-inline">
           <li>Copyright © 1997-2017 abelhadigital.com</li>
-          <li><a href="/privacy">Privacy</a></li>
-          <li><a href="#">Terms of Use</a></li>
+          <li><a href="../privacy">Privacy</a></li>
         </ul>
       </div>
     </div>
@@ -205,27 +207,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <!-- jQuery JS local fallback -->
-  <script>window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
   <!-- Bootstrap CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8="
     crossorigin="anonymous"></script>
   <!-- Bootstrap JS local fallback -->
-  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/js/vendor/bootstrap.min.js"><\/script>')}</script>
+  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="../js/vendor/bootstrap.min.js"><\/script>')}</script>
   <!-- Bootstrap CSS local fallback -->
   <script>
     $(document).ready(function() {
       if ($('#bootstrapCssTest').is(':visible') === true) {
-        $("head").prepend('<link href="/css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />');}});
+        $("head").prepend('<link href="../css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />');}});
   </script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="/js/vendor/ie10-viewport-bug-workaround.js"></script>
+  <script src="../js/vendor/ie10-viewport-bug-workaround.js"></script>
   <!-- Font Awesome local fallback -->
   <script>(function($) {
         var $span = $('<span class="fa" style="display:none"></span>');
         $('#fontAwesomeTest').append($span)
         var f = $span.css('fontFamily');
         if (f !== 'FontAwesome') {
-          $('head').append('<link href="/css/vendor/font-awesome.min.css" rel="stylesheet">');
+          $('head').append('<link href="../css/vendor/font-awesome.min.css" rel="stylesheet">');
         }
         })(jQuery);
   </script>

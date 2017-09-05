@@ -9,19 +9,23 @@
   <meta name="author" content="abelhadigital.com">
   <link rel="icon" href="favicon.ico">
 
-  <title>MultiHasher &middot; abelhadigital.com</title>
+  <title>Report Bugs &middot; abelhadigital.com</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w="
+    crossorigin="anonymous" />
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="../../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <link href="../css/vendor/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+    crossorigin="anonymous" />
+  <!-- Open Sans font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../../css/normal.css" rel="stylesheet">
+  <link href="../css/normal.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
@@ -41,10 +45,11 @@
       "position": "bottom-right",
       "content": {
         "dismiss": "I understand",
-        "href": "../../privacy/cookies"
+        "href": "./cookies"
       }
     })});
   </script>
+  <script src="../js/normal.js"></script>
 </head>
 
 <body>
@@ -62,55 +67,43 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../..">abelhadigital.com</a>
+        <a class="navbar-brand" href="..">abelhadigital.com</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="../../hostsman">HostsMan</a></li>
-          <li class="active"><a href="../../multihasher">MultiHasher</a></li>
+          <li><a href="../hostsman">HostsMan</a></li>
+          <li><a href="../multihasher">MultiHasher</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Software <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="../../hostsserver">HostsServer</a></li>
+              <li><a href="../hostsserver">HostsServer</a></li>
             </ul>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="../../about">Contacts</a></li>
+          <li><a href="../about">Contacts</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
 
-  <div class="release-notes">
-    <div class="container">
-      <h1 class="text-center">Release notes for MultiHasher</h1>
-      <div id="release-notes">
-        <h2>v2.8.2</h2>
-        <ul class="list-unstyled">
-          <li><div class="changelog-label"><em class="change-label change-updated">Updated</em></div>Minor UI tweaks</li>
-          <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Fixed critical bugs in most hash algorithms (introduced in v2.8) that could result in wrong hash values being calculated</li>
-          <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Minor bugs</li>
+  <div class="container">
+    <div class="row section">
+      <div class="col-md-10 col-md-offset-1 doc-body">
+        <h1>Reporting bugs</h1>
+        <p>When reporting a bug, please include the following information:</p>
+        <ul>
+          <li>application name and version number;</li>
+          <li>detailed description of your system;</li>
+          <li>description of the problem, including error codes (if available).</li>
         </ul>
-        <h2>v2.8.1</h2>
-        <ul class="list-unstyled">
-          <li><div class="changelog-label"><em class="change-label change-updated">Changed</em></div>Forced use of relative paths when saving verification files in the same drive as the hashed files</li>
-          <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Some verification files may not be saved in the correct format (Vista and later)</li>
-          <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Fixed couple of issues related to VirusTotal service</li>
-          <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Closing MultiHasher causes MRU list to be erased</li>
-          <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Minor bugs</li>
-        </ul>
-        <h2>v2.8</h2>
-        <ul class="list-unstyled">
-          <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added missing SHA-2 variants (SHA-224, SHA-512/224 and SHA-512/256)</li>
-          <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added support for Microsoft File Checksum Integrity Verifier (FCIV) database</li>
-          <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added support for Unix-style and BSD-style checksum files</li>
-          <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added option to display digests in base16 (lower or upper case), base32 or base64</li>
-          <li><div class="changelog-label"><em class="change-label change-new">New</em></div>Added German translation</li>
-          <li><div class="changelog-label"><em class="change-label change-updated">Improved</em></div>Windows 10 compatibility</li>
-          <li><div class="changelog-label"><em class="change-label change-updated">Updated</em></div>Minor UI tweaks</li>
-          <li><div class="changelog-label"><em class="change-label change-fixed">Fixed</em></div>Minor bugs</li>
-        </ul>
+        <p>Report bugs to 
+          <span id="noscript"><em>Email address protected by JavaScript. Activate JavaScript to see the email.</em></span>
+          <script>document.getElementById('noscript').style.display='none';</script>
+          <script type="text/javascript"> 
+            gen_link('bugs','abelhadigital.com','Bug report');
+          </script>
+        </p>
       </div>
     </div>
   </div>
@@ -122,18 +115,18 @@
           <div class="col-xs-4">
             <div class="footer-heading">Software</div>
             <ul class="list-unstyled footer-links">
-              <li class=""><a href="../../hostsman">HostsMan</a></li>
-              <li><a href="../../hostsserver">HostsServer</a></li>
-              <li><a href="../../multihasher">MultiHasher</a></li>
+              <li class=""><a href="../hostsman">HostsMan</a></li>
+              <li><a href="../hostsserver">HostsServer</a></li>
+              <li><a href="../multihasher">MultiHasher</a></li>
             </ul>
           </div>
 
           <div class="col-xs-4">
             <div class="footer-heading">Links</div>
             <ul class="list-unstyled footer-links">
-              <li><a href="../../about">About</a></li>
-              <li><a href="../../donate">Donate</a></li>
-              <li><a href="../../reportbug">Report Bugs</a></li>
+              <li><a href="../about">About</a></li>
+              <li><a href="../donate">Donate</a></li>
+              <li><a href="../reportbug">Report Bugs</a></li>
             </ul>
           </div>
 
@@ -143,7 +136,7 @@
               <li id="icon-facebook"><a href="https://www.facebook.com/abelhadigital" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
               <li id="icon-twitter"><a href="https://twitter.com/abelha_digital" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
               <li id="icon-email"><a href="mailto:info@abelhadigital.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-              <li id="icon-rss"><a href="../../feed.rss" target="_blank"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
+              <li id="icon-rss"><a href="../feed.rss" target="_blank"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
@@ -153,7 +146,7 @@
       <div class="container">
         <ul class="list-inline">
           <li>Copyright © 1997-2017 abelhadigital.com</li>
-          <li><a href="../../privacy">Privacy</a></li>
+          <li><a href="../privacy">Privacy</a></li>
         </ul>
       </div>
     </div>
@@ -167,29 +160,36 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <!-- jQuery JS local fallback -->
-  <script>window.jQuery || document.write('<script src="../../js/vendor/jquery.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
   <!-- Bootstrap CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8="
     crossorigin="anonymous"></script>
   <!-- Bootstrap JS local fallback -->
-  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="../../js/vendor/bootstrap.min.js"><\/script>')}</script>
+  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="../js/vendor/bootstrap.min.js"><\/script>')}</script>
   <!-- Bootstrap CSS local fallback -->
   <script>
     $(document).ready(function() {
       if ($('#bootstrapCssTest').is(':visible') === true) {
-        $("head").prepend('<link href="../../css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />');}});
+        $("head").prepend('<link href="../css/vendor/bootstrap.min.css" rel="stylesheet" type="text/css" />');}});
   </script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="../../js/vendor/ie10-viewport-bug-workaround.js"></script>
+  <script src="../js/vendor/ie10-viewport-bug-workaround.js"></script>
   <!-- Font Awesome local fallback -->
   <script>(function($) {
         var $span = $('<span class="fa" style="display:none"></span>');
         $('#fontAwesomeTest').append($span)
         var f = $span.css('fontFamily');
         if (f !== 'FontAwesome') {
-          $('head').append('<link href="../../css/vendor/font-awesome.min.css" rel="stylesheet">');
+          $('head').append('<link href="../css/vendor/font-awesome.min.css" rel="stylesheet">');
         }
         })(jQuery);
+  </script>
+
+  <!-- Enable tooltips -->
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
   </script>
 
 </body>

@@ -8,11 +8,11 @@
 	<ttl>120</ttl>
 	<atom:link href="https://rlfoundry.github.io/abelhadigital/feed.rss" rel="self" type="application/rss+xml" />
     <item>
-      <title>HostsMan v4.7.105</title>
-      <pubDate>Mon, 2 Jan 2017 12:00:00 +0100</pubDate>
+      <title>HostsMan v4.8.106</title>
+      <pubDate>Mon, 32 Oct 2017 12:00:00 +0100</pubDate>
       <link>https://rlfoundry.github.io/abelhadigital/hostsman</link>
       <guid isPermaLink="false">https://notepad-plus-plus.org/news/notepad-7.5-released.html</guid>
-      <description><![CDATA[HostsMan 4.7.105 released.]]></description>
+      <description><![CDATA[HostsMan 4.8.106 released.]]></description>
     </item>
     <item>
       <title>MultiHasher v2.8.2</title>

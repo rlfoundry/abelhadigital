@@ -151,10 +151,6 @@ body#hostsman .software-section h2 {
   max-width: 800px;
 }
 
-.release-notes h2 {
-  border-bottom: 1px solid #e0e0e0;
-}
-
 .release-notes ul {
   margin-bottom: 40px;
   display: table;
@@ -163,6 +159,27 @@ body#hostsman .software-section h2 {
 .release-notes li {
   padding-left: 100px;
   margin: 0 0 12px;
+}
+
+.release-notes h1 {
+  margin-bottom: 30px;
+}
+
+.release-notes .version {
+  height: 3.7em;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1.5em;
+  padding: 0 5px;
+}
+
+.version-number {
+  font-size: 24pt;
+}
+
+.version-date {
+  padding-top: 0.9em;
+  font-size: 14pt;
+  color: #777;
 }
 
 li .changelog-label {

@@ -1,9 +1,3 @@
-4.8.106:
-- added: per-monitor DPI support;
-- changed: minor visual improvements in HostsMan Editor;
-- fixed: several bugs in HostsMan Editor;
-- fixed: minor bugs.
-
 4.7.105:
 - added: Update Manager dialog now has the option to open local update source files in editor;
 - added: "Dan Pollock's hosts file" source;
